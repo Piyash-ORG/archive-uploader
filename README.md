@@ -26,7 +26,7 @@ This script automatically uploads video and image files from your **Documents** 
 ### 1. 📥 Clone or Download
 
 ```bash
-git clone https://github.com/your-username/archive-uploader.git
+git clone https://github.com/Piyash-ORG/archive-uploader.git
 cd archive-uploader
 
 2. 🐍 Install Requirements
