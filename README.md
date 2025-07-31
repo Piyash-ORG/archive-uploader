@@ -29,4 +29,19 @@ A Python script that automatically uploads video and image files from your Docum
 git clone https://github.com/Piyash-ORG/archive-uploader.git
 cd archive-uploader
  
+2️⃣ Install Dependencies
+
+pip install internetarchive python-dotenv
+3️⃣ Create .env File
+
+In the project root folder, create a .env file to store your Archive.org credentials:
+
+nano .env
+
+Paste the following content and save:
+
+ACCESS_KEY=your_archive_access_key
+SECRET_KEY=your_archive_secret_key
+
+➡️ Get your credentials from: https://archive.org/account/s3.php
 
