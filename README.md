@@ -34,6 +34,7 @@ cd archive-uploader
 pip install internetarchive python-dotenv
 
 3. 🗝️ Create .env File
+nano .env
 
 Create a .env file in the project root folder with your Archive.org credentials:
 
