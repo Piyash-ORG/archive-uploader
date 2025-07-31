@@ -1,71 +1,84 @@
-# 📤 Archive.org Auto Uploader (Termux Compatible)
+📤 Archive.org Auto Uploader (Termux Compatible)
 
-This script automatically uploads video and image files from your **Documents** folder (in Termux) to [Archive.org](https://archive.org).
+A Python script that automatically uploads video and image files from your Documents folder (in Termux) to Archive.org.
 
----
-
-## 📦 Features
-
-- Automatically scans `Documents/` folder
-- Supports video & image formats
-- Auto-generates clean identifier
-- Logs uploaded links with status
-- Archive.org API key/secret stored via `.env`
 
 ---
 
-## 📁 Supported File Types
+🚀 Features
 
-- 🎥 `.mp4`, `.mkv`, `.mov`, `.avi`, `.webm`
-- 🖼️ `.jpg`, `.jpeg`, `.png`, `.gif`, `.bmp`, `.webp`
+Scans your Documents/ folder for media files
+
+Supports common video and image formats
+
+Generates clean, auto-based Archive.org identifiers
+
+Logs upload status and shareable links
+
+Uses .env file to store API credentials securely
+
+
 
 ---
 
-## ⚙️ Setup Instructions
+📁 Supported File Types
 
-### 1. 📥 Clone or Download
+🎥 Video: .mp4, .mkv, .mov, .avi, .webm
+🖼️ Image: .jpg, .jpeg, .png, .gif, .bmp, .webp
 
-```bash
+
+---
+
+⚙️ Setup Instructions
+
+1️⃣ Clone the Repository
+
 git clone https://github.com/Piyash-ORG/archive-uploader.git
 cd archive-uploader
 
-2. 🐍 Install Requirements
+2️⃣ Install Dependencies
 
 pip install internetarchive python-dotenv
 
-3. 🗝️ Create .env File
+3️⃣ Create .env File
+
+In the project root folder, create a .env file to store your Archive.org credentials:
+
 nano .env
 
-Create a .env file in the project root folder with your Archive.org credentials:
+Paste the following:
 
 ACCESS_KEY=your_archive_access_key
 SECRET_KEY=your_archive_secret_key
 
-Replace with your real keys from: https://archive.org/account/s3.php
-
-4. 📂 Allow Storage Access (for Termux only)
-
-termux-setup-storage
-
-Make sure your files are in:
-
-/data/data/com.termux/files/home/storage/documents/
+➡️ Get your credentials from: https://archive.org/account/s3.php
 
 
 ---
 
-🚀 Run the Script
+4️⃣ Enable Storage Access (Termux Only)
+
+termux-setup-storage
+
+Place your media files in:
+
+→ /sdcard/Documents/
+
+
+---
+
+▶️ Run the Script
 
 python upload.py
 
-You’ll see live upload status and get the Archive.org links printed and saved to:
+You'll see live upload status in the terminal. Uploaded links are also saved to:
 
 Documents/archive_upload_log.txt
 
 
 ---
 
-📝 Log Example
+📝 Upload Log Example
 
 🕒 Upload Session: 2025-07-31 17:22:50
 ----------------------------------------------------------
@@ -77,11 +90,20 @@ Documents/archive_upload_log.txt
 
 👨‍💻 Made for Developers & Archivists
 
-Fast way to archive your files directly from your phone or PC using the power of Python and Internet Archive API.
+Quick and simple way to archive your media files directly from your Android phone (Termux) or PC using Python and the Internet Archive API.
 
 
 ---
 
-🔒 Security Note
+🔐 Security Note
 
 Never share your .env file publicly.
+
+Add .env to your .gitignore file to prevent accidental uploads.
+
+
+
+---
+
+🔧 Need help? Open an issue on GitHub or reach out.
+
