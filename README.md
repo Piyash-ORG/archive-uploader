@@ -28,5 +28,5 @@ A Python script that automatically uploads video and image files from your Docum
 ```bash
 git clone https://github.com/Piyash-ORG/archive-uploader.git
 cd archive-uploader
-িলাম ✅
+ 
 
